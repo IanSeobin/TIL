@@ -1,0 +1,59 @@
+깃헙에서 new reposity 코드 > 복사
+
+
+get config —list 
+깃헙 name, email, editor, pager 지정
+
+git config --global user.name "Ianseobin"
+git config --global user.email "asd4865@gmail.com"
+git config --global core.editor "vim"
+git config --global core.pager "cat"
+git config --list            
+
+
+first-repo   상위 폴더 에서
+ cd..            으로 지정
+
+깃헙 연결
+git clone https://github.com/IanSeobin/TIL.git
+
+폴더 만들기
+mkdir git
+mkdir python
+mkdir flask
+mkdir algorithms
+
+깃 폴더에 220816-command.md 마크다운 파일 만들기
+touch git/220816-command.md
+
+깃폴더로 경로지정
+cd git/
+
+파일 수정
+vi 220816-command.md
+
+for i in range(1,16+1):
+   if i%3==0:
+      print('fizz')
+   elif i%5==0:
+      print('buzz')
+   else:
+      print(i)
+
+파일 확인
+cat 220816-command.md
+
+깃에 추가
+git add 220816-command.md
+
+깃에 추가한 파일 확인
+git status 220816-command.md
+
+깃에 커밋하기
+git commit 220816-command.md
+feat: 제목
+condition: 설명
+
+깃에 보내기
+git push origin main 
+
